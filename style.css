@@ -24,10 +24,6 @@ header {
   opacity: 0.9;
 }
 
-.contact-wrapper{
-  //text-align: center;
-  //margin-left: 800px;
-}
 
 .header-content {
   display: flex;
@@ -122,6 +118,51 @@ header {
 }
 
 
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.4em 0.8em;
+  background: #25D366;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  box-shadow: 0 0 12px #1ebe5d;
+  transform: scale(10.05);
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.whatsapp-btn {
+  animation: pulse 2s infinite;
+}
+
+
 
 @keyframes fade {
   from { opacity: 0; }
@@ -176,12 +217,6 @@ header {
   box-shadow: 0 0 15px #800080;
 }
 
-footer {
-  text-align: center;
-  padding: 1em;
-  background: #000;
-  color: #fff;
-}
 
 .info-section {
   text-align: center;
@@ -331,6 +366,7 @@ footer {
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 1em;
+  color: #ddd;
 }
 
 .sobre-mi-img {
@@ -372,6 +408,7 @@ footer {
   padding: 2em;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(128, 0, 128, 0.2);
+  text-align: center;
 }
 
 .dashboard h3 {
@@ -415,52 +452,6 @@ footer {
     width: 100%;
     margin-bottom: 2em;
   }
-}
-
-
-
-
-
-
-.whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-  padding: 0.4em 0.8em;
-  background: #25D366;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9em;
-  max-width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-left: -8px;
-  transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-  background: #1ebe5d;
-  box-shadow: 0 0 12px #1ebe5d;
-  transform: scale(1.05);
-}
-
-.whatsapp-icon {
-  height: 18px;
-  width: 18px;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.whatsapp-btn {
-  animation: pulse 2s infinite;
 }
 
 
@@ -524,3 +515,11 @@ footer {
   }
 }
 
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #000;
+  color: #fff;
+}
