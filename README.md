@@ -37,8 +37,8 @@
 
 ## 📬 Contacto
 
-Desarrollado por **Jua**  
-📱 WhatsApp: [Click aquí](https://wa.me/573148593204)
+Desarrollado por **Juan Sanz**  
+📱 WhatsApp: [Click aquí](https://wa.me/5511982664773)
 
 ---
 
