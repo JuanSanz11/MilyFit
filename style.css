@@ -1,16 +1,21 @@
 body {
   max-width: 1200px;
+  margin: 0 auto;
   font-family: 'Arial', sans-serif;
-  margin: 0;
+
   background: linear-gradient(to right, #000, #800080);
   color: #fff;
   overflow-x: hidden;
 }
 
+
+
 header {
   background: #000;
   padding: 1em;
 }
+
+
 
 .logo-w-img {
   height: 350px;
@@ -74,14 +79,13 @@ header {
 }
 
 .slider {
-  width: 60%;
-  max-width: 700px;
-  margin-left: -4em;
+  width: 58%;
+  max-width: none;
+  margin-right: 2em;
 }
 
 .slide {
-  width: 55%;
-  //display: none;
+  width: 60%;
   border-radius: 10px;
 }
 
@@ -194,7 +198,7 @@ footer {
 .info-section p {
   font-size: 1.1em;
   margin: 0.5em 0;
-  color: #eee;
+  color: #000;
 }
 
 .logo-img {
@@ -202,6 +206,61 @@ footer {
   width: auto;
   margin-bottom: 1em;
 }
+
+
+.servicios-block,
+.consejos-block {
+  background: #1a001f; /* Morado profundo */
+  padding: 4em 2em;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.3);
+  margin: 2em auto;
+  max-width: 1200px;
+}
+
+.servicios-block h2,
+.consejos-block h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #c084fc; /* Morado claro vibrante */
+  text-align: center;
+}
+
+.servicios-grid,
+.consejos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.servicio,
+.consejo {
+  background: #fff;
+  color: #333;
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover,
+.consejo:hover {
+  transform: scale(1.02);
+}
+
+.servicio h3,
+.consejo h3 {
+  color: #800080;
+  margin-bottom: 0.5em;
+}
+
+.servicio p,
+.consejo p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
 
 @media (max-width: 768px) {
   .container {
@@ -307,14 +366,12 @@ footer {
 
 
 .dashboard {
-  width: 40%;
+  width: 38%;
   background: #fff;
   color: #333;
-  padding: 20px;
+  padding: 2em;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(128, 0, 128, 0.2);
-  margin-left: 190px;
-  margin-top: -580px;
 }
 
 .dashboard h3 {
@@ -345,6 +402,19 @@ footer {
   width: 100%;
   border-radius: 10px;
   margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider,
+  .dashboard {
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }
 
 
@@ -392,3 +462,65 @@ footer {
 .whatsapp-btn {
   animation: pulse 2s infinite;
 }
+
+
+
+.hero-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 2em;
+}
+
+.image-column {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.3);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-column,
+  .dashboard {
+    width: 100%;
+  }
+
+  .hero-img {
+    height: auto;
+  }
+
+
+
+@media (min-width: 1200px) {
+  .hero-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .image-column {
+    width: 55%;
+  }
+
+  .dashboard {
+    width: 38%;
+  }
+
+  .slider,
+  .contact-box {
+    width: auto;
+  }
+}
+
